@@ -1,0 +1,115 @@
+Google Cloud Platform
+Overview
+  In this series of labs, you take a demo microservices Java application built with the Spring framework and modify it to use an external database server. You adopt some of the best practices for tracing, configuration management, and integration with other services using integration patterns.
+  When implementing such techniques in a traditional on-premises environment, you have to build and manage these servers and service capabilities yourself.
+  But what do you do when you move to the cloud? Going cloud native is not only about replicating the architectures that you have to implement in your own data center, simply substituting virtual machine-based workloads for bare-metal workloads. Cloud-native applications can adopt the fully managed cloud services and platforms that require little or no manual operational overhead.
+  In these labs, you learn how to replace the external dependencies that you would otherwise need to maintain and operate yourself with fully managed services on Google Cloud Platform (GCP). Through the use of Spring Cloud GCP components and preconfigured Spring Boot starters, you can quickly replace RDBMs like MySQL with Cloud SQL, messaging pipeline services like RabbitMQ with Cloud Pub/Sub, distributed trace stores like Zipkin with Stackdriver Trace, and centralized configuration server services with Cloud Runtime Configuration API.
+  You first deploy and test the application in Cloud Shell, starting with this lab, where you bring the application up by running the two microservices components in separate Cloud Shell console tabs.
+  In later labs, you deploy the application components to App Engine and Kubernetes Engine and explore how to use Stackdriver Trace to debug and monitor your application when it is deployed to those services.
+  Cloud Shell is an interactive, Linux command-line shell environment for managing resources hosted on GCP. When you start Cloud Shell, it provisions a small Compute Engine virtual machine running a Debian-based Linux operating system. Cloud Shell provides command-line access to the virtual machine instance in a terminal window that opens in the GCP console. You can open multiple shell connections to the same instance. The beta version of Cloud Shell code editor is now available for use. You can use the code editor to browse file directories as well as view and edit files, with continued access to Cloud Shell.
+
+JAVAMS01 Bootstrapping the Application Frontend and Backend
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Configure Cloud Shell to run a multi-part Java application locally
+      Use Apache Maven to launch Java applications in Cloud Shell
+      Use curl and the Cloud Shell web preview to test connectivity to web applications running locally in Cloud Shell
+
+JAVAMS02 Configuring and Connecting to Cloud SQL
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Create a Cloud SQL instance, database, and table
+      Use Spring to add Cloud SQL support to your application
+      Configure an application profile for Cloud SQL
+      Verify that an application is using Cloud SQL
+
+JAVAMS03 Working with Runtime Configurations
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Use Spring Cloud GCP to add support for Cloud Runtime Configuration API
+      Create deployment profiles to selectively enable support for runtime configuration services
+      Enable the dynamic refresh of runtime configuration values in an application
+      Use Cloud Runtime Configuration API to create runtime configuration profiles and values
+      Use Cloud Runtime Configuration API to dynamically update an application setting
+
+JAVAMS04 Working with Stackdriver Trace
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Enable Stackdriver Trace API
+      Use Spring to add Stackdriver Trace to your application
+      Configure customized trace settings in an application
+      Inspect the trace output
+
+JAVAMS05 Messaging with Cloud Pub/Sub
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Enable Cloud Pub/Sub and create a Cloud Pub/Sub topic
+      Use Spring to add Cloud Pub/Sub support to your application
+      Modify an application to publish Cloud Pub/Sub messages
+      Create a Cloud Pub/Sub subscription
+      Modify an application to process messages from a Cloud Pub/Sub subscription
+
+JAVAMS06 Integrating Cloud Pub/Sub with Spring
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Add Spring Integration Core to an application
+      Create an outbound message gateway in your application
+      Configure an application to publish messages through a gateway
+      Bind the output channel of a message gateway to Cloud Pub/Sub
+  
+JAVAMS07 Uploading and Storing Files
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Add the Spring starter for Cloud Storage
+      Create a Cloud Storage bucket
+      Modify the HTML template of the frontend application to enable file uploads
+      Modify the frontend application to process and store images on Cloud Storage
+      Modify the frontend application to display uploaded message images
+
+JAVAMS08 Using Cloud Platform APIs
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Add a GCP API Java library to an application
+      Create a GCP credential scope for Spring
+      Create a Java bean that implements Vision API features
+      Use Vision API to add image analysis to an application
+
+
+JAVAMS09 Deploying to App Engine
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Initialize App Engine
+      Reconfigure an application to work with App Engine
+      Configure the Cloud Runtime Configuration API to automatically provide the backend URL to the Frontend application
+      Deploy the application to App Engine
+
+JAVAMS10 Debugging with Stackdriver Debugger
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Configure Stackdriver Logging for an App Engine application
+      Configure Stackdriver Debugger source content for App Engine debugging
+      Configure Stackdriver Debugger logpoints and snapshots
+      Enable Stackdriver Monitoring
+
+JAVAMS11 Working with Cloud Spanner
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Create a Cloud Spanner instance and database
+      Use the data definition language (DDL) to create a Cloud Spanner table
+      Use Spring to add support for Cloud Spanner to an application
+      Modify a Java application to use Cloud Spanner instead of Cloud SQL
+
+JAVAMS12 Deploying to Kubernetes Engine
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Create a Kubernetes Engine cluster
+      Create a containerized version of a Java application
+      Create a Kubernetes deployment for a containerized application
+
+JAVAMS13 Working with Kubernetes Monitoring
+  Objectives
+    In this lab, you learn how to perform the following tasks:
+      Enable Stackdriver Monitoring for Kubernetes Engine
+      Enable Prometheus monitoring in a Kubernetes Engine cluster
+      Expose Prometheus metrics from inside a Spring Boot application
+      Explore live application metrics using Stackdriver Monitoring
