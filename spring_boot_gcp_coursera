@@ -1,12 +1,31 @@
 Google Cloud Platform
 Overview
-  In this series of labs, you take a demo microservices Java application built with the Spring framework and modify it to use an external database server. You adopt some of the best practices for tracing, configuration management, and integration with other services using integration patterns.
+  In this series of labs, you take a demo microservices Java application built with the Spring framework and modify it to use an external database server. 
+  You adopt some of the best practices for tracing, configuration management, and integration with other services using integration patterns.
+  
   When implementing such techniques in a traditional on-premises environment, you have to build and manage these servers and service capabilities yourself.
-  But what do you do when you move to the cloud? Going cloud native is not only about replicating the architectures that you have to implement in your own data center, simply substituting virtual machine-based workloads for bare-metal workloads. Cloud-native applications can adopt the fully managed cloud services and platforms that require little or no manual operational overhead.
-  In these labs, you learn how to replace the external dependencies that you would otherwise need to maintain and operate yourself with fully managed services on Google Cloud Platform (GCP). Through the use of Spring Cloud GCP components and preconfigured Spring Boot starters, you can quickly replace RDBMs like MySQL with Cloud SQL, messaging pipeline services like RabbitMQ with Cloud Pub/Sub, distributed trace stores like Zipkin with Stackdriver Trace, and centralized configuration server services with Cloud Runtime Configuration API.
-  You first deploy and test the application in Cloud Shell, starting with this lab, where you bring the application up by running the two microservices components in separate Cloud Shell console tabs.
-  In later labs, you deploy the application components to App Engine and Kubernetes Engine and explore how to use Stackdriver Trace to debug and monitor your application when it is deployed to those services.
-  Cloud Shell is an interactive, Linux command-line shell environment for managing resources hosted on GCP. When you start Cloud Shell, it provisions a small Compute Engine virtual machine running a Debian-based Linux operating system. Cloud Shell provides command-line access to the virtual machine instance in a terminal window that opens in the GCP console. You can open multiple shell connections to the same instance. The beta version of Cloud Shell code editor is now available for use. You can use the code editor to browse file directories as well as view and edit files, with continued access to Cloud Shell.
+  
+  But what do you do when you move to the cloud? Going cloud native is not only about replicating the architectures that 
+  you have to implement in your own data center, simply substituting virtual machine-based workloads for bare-metal workloads. 
+  Cloud-native applications can adopt the fully managed cloud services and platforms that require little or no manual operational overhead.
+  
+  In these labs, you learn how to replace the external dependencies that you would otherwise need to maintain and operate yourself 
+  with fully managed services on Google Cloud Platform (GCP). Through the use of Spring Cloud GCP components and preconfigured 
+  Spring Boot starters, you can quickly replace RDBMs like MySQL with Cloud SQL, messaging pipeline services like RabbitMQ with 
+  Cloud Pub/Sub, distributed trace stores like Zipkin with Stackdriver Trace, and centralized configuration server services with Cloud Runtime Configuration API.
+  
+  You first deploy and test the application in Cloud Shell, starting with this lab, where you bring the application up by running
+  the two microservices components in separate Cloud Shell console tabs.
+  
+  In later labs, you deploy the application components to App Engine and Kubernetes Engine and explore how to use 
+  Stackdriver Trace to debug and monitor your application when it is deployed to those services.
+  
+  Cloud Shell is an interactive, Linux command-line shell environment for managing resources hosted on GCP. 
+  When you start Cloud Shell, it provisions a small Compute Engine virtual machine running a Debian-based Linux operating system. 
+  Cloud Shell provides command-line access to the virtual machine instance in a terminal window that opens in the GCP console. 
+  You can open multiple shell connections to the same instance. 
+  The beta version of Cloud Shell code editor is now available for use. 
+  You can use the code editor to browse file directories as well as view and edit files, with continued access to Cloud Shell.
 
 JAVAMS01 Bootstrapping the Application Frontend and Backend
   Objectives
